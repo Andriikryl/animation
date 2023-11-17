@@ -16,7 +16,11 @@ export default function AnimationWrapper({
 }: AnimationWrapperProps) {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.box__container}>{children}</div>
+      <div className={styles.box__container}>
+        {children}
+        <span className={styles.artButtonAngleLeft} />
+        <span className={styles.artButtonAngleRight} />
+      </div>
       <Button> {nameLink}</Button>
     </div>
   );
