@@ -8,7 +8,7 @@ export default function Gallery() {
     <section>
       <Container>
         <div>
-          <AnimationWrapper>
+          <AnimationWrapper nameLink={"fade in"} href="/fade-in">
             <FadiIn />
           </AnimationWrapper>
         </div>

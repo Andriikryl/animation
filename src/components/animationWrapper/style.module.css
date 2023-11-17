@@ -1,0 +1,16 @@
+.wrapper{
+    max-width: 250px;
+}
+.box__container{
+    padding: 20px;
+    border: 1px solid #c1121f;
+    max-width: 250px;
+    margin-block-end: 10px;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    text-transform: uppercase;
+}
