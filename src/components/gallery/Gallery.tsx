@@ -12,6 +12,7 @@ import FadeOutUp from "../FadeInOutUp/FadeOutUp";
 import FadeOutDown from "../FadeInOutDown/FadeOutDown";
 import FadeOutLeft from "../FadeInOutLeft/FadeOutLeft";
 import FadeOutRight from "../FadeInOutRight/FadeOutRight";
+import SideInOut from "../SideInOut/SideInOut";
 export default function Gallery() {
   return (
     <section className={styles.gallery}>
@@ -46,6 +47,9 @@ export default function Gallery() {
           </AnimationWrapper>
           <AnimationWrapper nameLink={"fade out right"} href="/fade-out">
             <FadeOutRight />
+          </AnimationWrapper>
+          <AnimationWrapper nameLink={"side in out"} href="/fade-out">
+            <SideInOut />
           </AnimationWrapper>
         </div>
       </Container>
