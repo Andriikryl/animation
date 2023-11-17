@@ -14,6 +14,9 @@ import FadeOutLeft from "../FadeInOutLeft/FadeOutLeft";
 import FadeOutRight from "../FadeInOutRight/FadeOutRight";
 import SideInOut from "../SideInOut/SideInOut";
 import SideInBottom from "../SideInBottom/SideInButtom";
+import PulseFadeIn from "../PulseFadeIn/PulseFadeIn";
+import SwingDropIn from "../SwingDropIn/SwingDropIn";
+import SlideUpwithFade from "../SlideUpwithFade/SlideUpwithFade";
 export default function Gallery() {
   return (
     <section className={styles.gallery}>
@@ -54,6 +57,15 @@ export default function Gallery() {
           </AnimationWrapper>
           <AnimationWrapper nameLink={"side in buttom"} href="/fade-out">
             <SideInBottom />
+          </AnimationWrapper>
+          <AnimationWrapper nameLink={"Pulse fade in"} href="/fade-out">
+            <PulseFadeIn />
+          </AnimationWrapper>
+          <AnimationWrapper nameLink={"Swing Drop-In"} href="/fade-out">
+            <SwingDropIn />
+          </AnimationWrapper>
+          <AnimationWrapper nameLink={"Swing Drop-In"} href="/fade-out">
+            <SlideUpwithFade />
           </AnimationWrapper>
         </div>
       </Container>
