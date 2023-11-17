@@ -1,0 +1,23 @@
+.box{
+    position: relative;
+    z-index: 200;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ffc300;
+    background-color: transparent;
+    background-image:  linear-gradient(hsl(300, 100%, 92%) 1px, transparent 1px), linear-gradient(to right, hsl(300, 100%, 92%) 1px, hsl(240, 53%, 93%, .1) 1px);
+    background-size: 20px 20px;
+}
+
+.box:hover{
+    animation: fade-in 500ms ease-in-out;
+}
+
+@keyframes fade-in {
+    0%, 100%{
+        transform:scale(1, 1);
+      }
+      50% {
+        transform: scale(1.1, 0.9);
+      }
+}
