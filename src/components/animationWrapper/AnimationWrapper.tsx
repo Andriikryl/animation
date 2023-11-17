@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import styles from "./style.module.css";
 import { Button } from "../button/Button";
 
@@ -14,6 +15,10 @@ export default function AnimationWrapper({
   nameLink,
   href,
 }: AnimationWrapperProps) {
+  const router = useRouter();
+  const handleClick = () => {
+    router.push(href);
+  };
   return (
     <div className={styles.wrapper}>
       <div className={styles.box__container}>
@@ -21,7 +26,7 @@ export default function AnimationWrapper({
         <span className={styles.artButtonAngleLeft} />
         <span className={styles.artButtonAngleRight} />
       </div>
-      <Button> {nameLink}</Button>
+      <Button onClick={handleClick}> {nameLink}</Button>
     </div>
   );
 }

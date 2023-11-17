@@ -5,9 +5,9 @@ import AnimationWrapper from "../animationWrapper/AnimationWrapper";
 import FadiIn from "../FadeIn/FadiIn";
 export default function Gallery() {
   return (
-    <section>
+    <section className={styles.gallery}>
       <Container>
-        <div>
+        <div className={styles.gallery__box}>
           <AnimationWrapper nameLink={"fade in"} href="/fade-in">
             <FadiIn />
           </AnimationWrapper>
