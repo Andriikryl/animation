@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "../container/Container";
 import styles from "./style.module.css";
 import Link from "next/link";
+import Bord from "../bord/Bord";
 
 export default function Header() {
   return (
@@ -18,6 +19,7 @@ export default function Header() {
             </ul>
           </nav>
         </div>
+        <Bord />
       </Container>
     </header>
   );
