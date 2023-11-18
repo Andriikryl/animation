@@ -18,6 +18,8 @@ import PulseFadeIn from "../PulseFadeIn/PulseFadeIn";
 import SwingDropIn from "../SwingDropIn/SwingDropIn";
 import SlideUpwithFade from "../SlideUpwithFade/SlideUpwithFade";
 import Squeeze from "../Squeeze/Squeeze";
+import VerticalBounce from "../VerticalBounce/VerticalBounce";
+import RotationalWave from "../RotationalWave/RotationalWave";
 export default function Gallery() {
   return (
     <section className={styles.gallery}>
@@ -70,6 +72,12 @@ export default function Gallery() {
           </AnimationWrapper>
           <AnimationWrapper nameLink={"Squeeze"} href="/fade-out">
             <Squeeze />
+          </AnimationWrapper>
+          <AnimationWrapper nameLink={"Vertical Bounce"} href="/fade-out">
+            <VerticalBounce />
+          </AnimationWrapper>
+          <AnimationWrapper nameLink={"Rotational Wave"} href="/fade-out">
+            <RotationalWave />
           </AnimationWrapper>
         </div>
       </Container>
