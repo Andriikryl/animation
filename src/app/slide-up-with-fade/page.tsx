@@ -3,13 +3,14 @@ import PageWrapper from "@/components/pageWrapper/PageWrapper";
 import FadiIn from "@/components/FadeIn/FadiIn";
 import { Container } from "@/components/container/Container";
 import Code from "@/components/code/Code";
+import SlideUpwithFade from "@/components/SlideUpwithFade/SlideUpwithFade";
 
-export default function SlideUp() {
+export default function SlideUpP() {
   return (
     <section>
       <Container>
         <PageWrapper title="Slide up with fade">
-          <FadiIn />
+          <SlideUpwithFade />
         </PageWrapper>
         <Code
           code=".box:hover{

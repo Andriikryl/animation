@@ -3,13 +3,14 @@ import PageWrapper from "@/components/pageWrapper/PageWrapper";
 import FadiIn from "@/components/FadeIn/FadiIn";
 import { Container } from "@/components/container/Container";
 import Code from "@/components/code/Code";
+import FadeInDown from "@/components/FadeInDown/FadeInDown";
 
-export default function FadeInDown() {
+export default function FadeInDownP() {
   return (
     <section>
       <Container>
         <PageWrapper title="Fade in down">
-          <FadiIn />
+          <FadeInDown />
         </PageWrapper>
         <Code
           code="

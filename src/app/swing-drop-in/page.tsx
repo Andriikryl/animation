@@ -3,13 +3,14 @@ import PageWrapper from "@/components/pageWrapper/PageWrapper";
 import FadiIn from "@/components/FadeIn/FadiIn";
 import { Container } from "@/components/container/Container";
 import Code from "@/components/code/Code";
+import SwingDropIn from "@/components/SwingDropIn/SwingDropIn";
 
-export default function SwingDropIn() {
+export default function SwingDropInP() {
   return (
     <section>
       <Container>
         <PageWrapper title="Swing drop in">
-          <FadiIn />
+          <SwingDropIn />
         </PageWrapper>
         <Code
           code=".box:hover{

@@ -3,13 +3,14 @@ import PageWrapper from "@/components/pageWrapper/PageWrapper";
 import FadiIn from "@/components/FadeIn/FadiIn";
 import { Container } from "@/components/container/Container";
 import Code from "@/components/code/Code";
+import Squeeze from "@/components/Squeeze/Squeeze";
 
-export default function Squeeze() {
+export default function SqueezeP() {
   return (
     <section>
       <Container>
         <PageWrapper title="Squeeze">
-          <FadiIn />
+          <Squeeze />
         </PageWrapper>
         <Code
           code=".box:hover{

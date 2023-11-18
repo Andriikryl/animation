@@ -3,13 +3,14 @@ import PageWrapper from "@/components/pageWrapper/PageWrapper";
 import FadiIn from "@/components/FadeIn/FadiIn";
 import { Container } from "@/components/container/Container";
 import Code from "@/components/code/Code";
+import { VercelLogoIcon } from "@radix-ui/react-icons";
 
-export default function VerticalBounce() {
+export default function VerticalBounceP() {
   return (
     <section>
       <Container>
         <PageWrapper title="Vertical bounce">
-          <FadiIn />
+          <VercelLogoIcon />
         </PageWrapper>
         <Code
           code=".box:hover{

@@ -3,13 +3,14 @@ import PageWrapper from "@/components/pageWrapper/PageWrapper";
 import FadiIn from "@/components/FadeIn/FadiIn";
 import { Container } from "@/components/container/Container";
 import Code from "@/components/code/Code";
+import PulseFadeIn from "@/components/PulseFadeIn/PulseFadeIn";
 
-export default function PulseFadeIn() {
+export default function PulseFadeInP() {
   return (
     <section>
       <Container>
         <PageWrapper title="Pulse fade in">
-          <FadiIn />
+          <PulseFadeIn />
         </PageWrapper>
         <Code
           code=".box:hover{

@@ -3,13 +3,14 @@ import PageWrapper from "@/components/pageWrapper/PageWrapper";
 import FadiIn from "@/components/FadeIn/FadiIn";
 import { Container } from "@/components/container/Container";
 import Code from "@/components/code/Code";
+import SideInBottom from "@/components/SideInBottom/SideInButtom";
 
-export default function SideInButtom() {
+export default function SideInButtomP() {
   return (
     <section>
       <Container>
         <PageWrapper title="Side in buttom">
-          <FadiIn />
+          <SideInBottom />
         </PageWrapper>
         <Code
           code=".box:hover{

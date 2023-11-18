@@ -3,13 +3,14 @@ import PageWrapper from "@/components/pageWrapper/PageWrapper";
 import FadiIn from "@/components/FadeIn/FadiIn";
 import { Container } from "@/components/container/Container";
 import Code from "@/components/code/Code";
+import FadeOutLeft from "@/components/FadeInOutLeft/FadeOutLeft";
 
-export default function FadeOutLeft() {
+export default function FadeOutLeftP() {
   return (
     <section>
       <Container>
         <PageWrapper title="Fade out Left">
-          <FadiIn />
+          <FadeOutLeft />
         </PageWrapper>
         <Code
           code=".box:hover{

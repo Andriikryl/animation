@@ -3,13 +3,14 @@ import PageWrapper from "@/components/pageWrapper/PageWrapper";
 import FadiIn from "@/components/FadeIn/FadiIn";
 import { Container } from "@/components/container/Container";
 import Code from "@/components/code/Code";
+import HorizontalVibration from "@/components/HorizontalVibration/HorizontalVibration";
 
-export default function HorizontalVibrations() {
+export default function HorizontalVibrationsP() {
   return (
     <section>
       <Container>
         <PageWrapper title="Horizontal vibarotions">
-          <FadiIn />
+          <HorizontalVibration />
         </PageWrapper>
         <Code
           code=".box:hover{

@@ -3,13 +3,14 @@ import PageWrapper from "@/components/pageWrapper/PageWrapper";
 import FadiIn from "@/components/FadeIn/FadiIn";
 import { Container } from "@/components/container/Container";
 import Code from "@/components/code/Code";
+import RotationalWave from "@/components/RotationalWave/RotationalWave";
 
-export default function VerticalWave() {
+export default function VerticalWaveP() {
   return (
     <section>
       <Container>
         <PageWrapper title="Rotation wave">
-          <FadiIn />
+          <RotationalWave />
         </PageWrapper>
         <Code
           code=".box:hover{

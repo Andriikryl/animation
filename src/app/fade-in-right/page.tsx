@@ -3,13 +3,14 @@ import PageWrapper from "@/components/pageWrapper/PageWrapper";
 import FadiIn from "@/components/FadeIn/FadiIn";
 import { Container } from "@/components/container/Container";
 import Code from "@/components/code/Code";
+import FadeInRigh from "@/components/FadeInRight/FadeInRight";
 
-export default function FadeInRigth() {
+export default function FadeInRigthP() {
   return (
     <section>
       <Container>
         <PageWrapper title="Fade in Rigth">
-          <FadiIn />
+          <FadeInRigh />
         </PageWrapper>
         <Code
           code="

@@ -1,15 +1,15 @@
 import React from "react";
 import PageWrapper from "@/components/pageWrapper/PageWrapper";
-import FadiIn from "@/components/FadeIn/FadiIn";
 import { Container } from "@/components/container/Container";
 import Code from "@/components/code/Code";
+import BlurredFadeIn from "@/components/BlurredFade-In/BlurredFadeIn";
 
-export default function BlurredFadeIn() {
+export default function BlurredFadeInP() {
   return (
     <section>
       <Container>
         <PageWrapper title="Blurred fade-in">
-          <FadiIn />
+          <BlurredFadeIn />
         </PageWrapper>
         <Code
           code=".box:hover{
