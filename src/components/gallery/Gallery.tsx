@@ -39,25 +39,25 @@ export default function Gallery() {
           <AnimationWrapper nameLink={"fade in down"} href="/fade-in-down">
             <FadeInDown />
           </AnimationWrapper>
-          <AnimationWrapper nameLink={"fade in left"} href="/fade-out">
+          <AnimationWrapper nameLink={"fade in left"} href="/fade-in-left">
             <FadeInLeft />
           </AnimationWrapper>
-          <AnimationWrapper nameLink={"fade in right"} href="/fade-out">
+          <AnimationWrapper nameLink={"fade in right"} href="/fade-in-right">
             <FadeInRigh />
           </AnimationWrapper>
-          <AnimationWrapper nameLink={"fade out up"} href="/fade-out">
+          <AnimationWrapper nameLink={"fade out up"} href="/fade-out-up">
             <FadeOutUp />
           </AnimationWrapper>
-          <AnimationWrapper nameLink={"fade out down"} href="/fade-out">
+          <AnimationWrapper nameLink={"fade out down"} href="/fade-out-down">
             <FadeOutDown />
           </AnimationWrapper>
-          <AnimationWrapper nameLink={"fade out left"} href="/fade-out">
+          <AnimationWrapper nameLink={"fade out left"} href="/fade-out-left">
             <FadeOutLeft />
           </AnimationWrapper>
-          <AnimationWrapper nameLink={"fade out right"} href="/fade-out">
+          <AnimationWrapper nameLink={"fade out right"} href="/fade-out-right">
             <FadeOutRight />
           </AnimationWrapper>
-          <AnimationWrapper nameLink={"side in out"} href="/fade-out">
+          <AnimationWrapper nameLink={"side in out"} href="/side-in-out">
             <SideInOut />
           </AnimationWrapper>
           <AnimationWrapper nameLink={"side in buttom"} href="/fade-out">
