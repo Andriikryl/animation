@@ -20,6 +20,7 @@ import SlideUpwithFade from "../SlideUpwithFade/SlideUpwithFade";
 import Squeeze from "../Squeeze/Squeeze";
 import VerticalBounce from "../VerticalBounce/VerticalBounce";
 import RotationalWave from "../RotationalWave/RotationalWave";
+import HorizontalVibration from "../HorizontalVibration/HorizontalVibration";
 export default function Gallery() {
   return (
     <section className={styles.gallery}>
@@ -78,6 +79,9 @@ export default function Gallery() {
           </AnimationWrapper>
           <AnimationWrapper nameLink={"Rotational Wave"} href="/fade-out">
             <RotationalWave />
+          </AnimationWrapper>
+          <AnimationWrapper nameLink={"Horizontal Vibration"} href="/fade-out">
+            <HorizontalVibration />
           </AnimationWrapper>
         </div>
       </Container>
