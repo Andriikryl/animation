@@ -1,0 +1,37 @@
+import React from "react";
+import PageWrapper from "@/components/pageWrapper/PageWrapper";
+import FadiIn from "@/components/FadeIn/FadiIn";
+import { Container } from "@/components/container/Container";
+import Code from "@/components/code/Code";
+
+export default function PulseFadeIn() {
+  return (
+    <section>
+      <Container>
+        <PageWrapper title="Pulse fade in">
+          <FadiIn />
+        </PageWrapper>
+        <Code
+          code=".box:hover{
+            animation: fade-in 500ms ease-in-out;
+        }
+        
+        @keyframes fade-in {
+            0%{
+                transform: scale(0.9);
+                opacity: 0;
+              }
+              50%{
+                transform: scale(1.05);
+                opacity: 0.6;
+              }
+              100% {
+                transform: scale(1);
+                opacity: 1;
+              }
+        }"
+        />
+      </Container>
+    </section>
+  );
+}

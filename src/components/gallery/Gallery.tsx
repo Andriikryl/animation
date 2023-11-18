@@ -60,31 +60,43 @@ export default function Gallery() {
           <AnimationWrapper nameLink={"side in out"} href="/side-in-out">
             <SideInOut />
           </AnimationWrapper>
-          <AnimationWrapper nameLink={"side in buttom"} href="/fade-out">
+          <AnimationWrapper nameLink={"side in buttom"} href="/side-in-buttom">
             <SideInBottom />
           </AnimationWrapper>
-          <AnimationWrapper nameLink={"Pulse fade in"} href="/fade-out">
+          <AnimationWrapper nameLink={"Pulse fade in"} href="/pulse-fade-in">
             <PulseFadeIn />
           </AnimationWrapper>
-          <AnimationWrapper nameLink={"Swing Drop-In"} href="/fade-out">
+          <AnimationWrapper nameLink={"Swing Drop-In"} href="/swing-drop-in">
             <SwingDropIn />
           </AnimationWrapper>
-          <AnimationWrapper nameLink={"Swing Drop-In"} href="/fade-out">
+          <AnimationWrapper
+            nameLink={"Slide up with fade"}
+            href="/slide-up-with-fade"
+          >
             <SlideUpwithFade />
           </AnimationWrapper>
-          <AnimationWrapper nameLink={"Squeeze"} href="/fade-out">
+          <AnimationWrapper nameLink={"Squeeze"} href="/squeeze">
             <Squeeze />
           </AnimationWrapper>
-          <AnimationWrapper nameLink={"Vertical Bounce"} href="/fade-out">
+          <AnimationWrapper
+            nameLink={"Vertical Bounce"}
+            href="/vertical-bounce"
+          >
             <VerticalBounce />
           </AnimationWrapper>
-          <AnimationWrapper nameLink={"Rotational Wave"} href="/fade-out">
+          <AnimationWrapper nameLink={"Rotational Wave"} href="/rotation-wave">
             <RotationalWave />
           </AnimationWrapper>
-          <AnimationWrapper nameLink={"Horizontal Vibration"} href="/fade-out">
+          <AnimationWrapper
+            nameLink={"Horizontal Vibration"}
+            href="/horizontal-vibration"
+          >
             <HorizontalVibration />
           </AnimationWrapper>
-          <AnimationWrapper nameLink={"Blurred Fade-In"} href="/fade-out">
+          <AnimationWrapper
+            nameLink={"Blurred Fade-In"}
+            href="/blurred-fade-in"
+          >
             <BlurredFadeIn />
           </AnimationWrapper>
         </div>
