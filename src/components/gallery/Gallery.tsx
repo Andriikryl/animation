@@ -33,10 +33,10 @@ export default function Gallery() {
           <AnimationWrapper nameLink={"fade out"} href="/fade-out">
             <FadeOut />
           </AnimationWrapper>
-          <AnimationWrapper nameLink={"fade in up"} href="/fade-out">
+          <AnimationWrapper nameLink={"fade in up"} href="/fade-in-up">
             <FadeInUp />
           </AnimationWrapper>
-          <AnimationWrapper nameLink={"fade in down"} href="/fade-out">
+          <AnimationWrapper nameLink={"fade in down"} href="/fade-in-down">
             <FadeInDown />
           </AnimationWrapper>
           <AnimationWrapper nameLink={"fade in left"} href="/fade-out">
