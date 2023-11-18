@@ -21,6 +21,7 @@ import Squeeze from "../Squeeze/Squeeze";
 import VerticalBounce from "../VerticalBounce/VerticalBounce";
 import RotationalWave from "../RotationalWave/RotationalWave";
 import HorizontalVibration from "../HorizontalVibration/HorizontalVibration";
+import BlurredFadeIn from "../BlurredFade-In/BlurredFadeIn";
 export default function Gallery() {
   return (
     <section className={styles.gallery}>
@@ -82,6 +83,9 @@ export default function Gallery() {
           </AnimationWrapper>
           <AnimationWrapper nameLink={"Horizontal Vibration"} href="/fade-out">
             <HorizontalVibration />
+          </AnimationWrapper>
+          <AnimationWrapper nameLink={"Blurred Fade-In"} href="/fade-out">
+            <BlurredFadeIn />
           </AnimationWrapper>
         </div>
       </Container>
