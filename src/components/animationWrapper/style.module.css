@@ -1,6 +1,5 @@
 .wrapper{
     max-width: 250px;
-    margin-block-end: 60px;
 }
 .box__container{
     --size-height: 0.3571rem;

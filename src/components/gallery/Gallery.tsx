@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import styles from "./style.module.css";
 import { Container } from "../container/Container";
+import { motion } from "framer-motion";
 import AnimationWrapper from "../animationWrapper/AnimationWrapper";
 import FadiIn from "../FadeIn/FadiIn";
 import FadeOut from "../FadeOut/FadeOut";
@@ -22,85 +24,86 @@ import VerticalBounce from "../VerticalBounce/VerticalBounce";
 import RotationalWave from "../RotationalWave/RotationalWave";
 import HorizontalVibration from "../HorizontalVibration/HorizontalVibration";
 import BlurredFadeIn from "../BlurredFade-In/BlurredFadeIn";
+
+const animationComponents = [
+  { name: "fade in", component: <FadiIn />, href: "/fade-in" },
+  { name: "fade out", component: <FadeOut />, href: "/fade-out" },
+  { name: "fade in up", component: <FadeInUp />, href: "/fade-in-up" },
+  { name: "fade in down", component: <FadeInDown />, href: "/fade-in-down" },
+  { name: "fade in left", component: <FadeInLeft />, href: "/fade-in-left" },
+  { name: "fade in right", component: <FadeInRigh />, href: "/fade-in-right" },
+  { name: "fade out up", component: <FadeOutUp />, href: "/fade-out-up" },
+  { name: "fade out down", component: <FadeOutDown />, href: "/fade-out-down" },
+  { name: "fade out left", component: <FadeOutLeft />, href: "/fade-out-left" },
+  {
+    name: "fade out right",
+    component: <FadeOutRight />,
+    href: "/fade-out-right",
+  },
+  { name: "side in out", component: <SideInOut />, href: "/side-in-out" },
+  {
+    name: "side in bottom",
+    component: <SideInBottom />,
+    href: "/side-in-bottom",
+  },
+  { name: "pulse fade in", component: <PulseFadeIn />, href: "/pulse-fade-in" },
+  { name: "swing drop in", component: <SwingDropIn />, href: "/swing-drop-in" },
+  {
+    name: "slide up with fade",
+    component: <SlideUpwithFade />,
+    href: "/slide-up-with-fade",
+  },
+  { name: "squeeze", component: <Squeeze />, href: "/squeeze" },
+  {
+    name: "vertical bounce",
+    component: <VerticalBounce />,
+    href: "/vertical-bounce",
+  },
+  {
+    name: "rotational wave",
+    component: <RotationalWave />,
+    href: "/rotation-wave",
+  },
+  {
+    name: "horizontal vibration",
+    component: <HorizontalVibration />,
+    href: "/horizontal-vibration",
+  },
+  {
+    name: "blurred fade-in",
+    component: <BlurredFadeIn />,
+    href: "/blurred-fade-in",
+  },
+];
+
+const XAnimations = {
+  hidden: { opacity: 0, x: 400 },
+  visible: (custom: number) => ({
+    opacity: 1,
+    x: 0,
+    transition: { delay: custom * 0.2, duration: 0.8 },
+  }),
+};
+
 export default function Gallery() {
   return (
-    <section className={styles.gallery}>
+    <motion.section
+      className={styles.gallery}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2, once: true }}
+    >
       <Container>
-        <div className={styles.gallery__box}>
-          <AnimationWrapper nameLink={"fade in"} href="/fade-in">
-            <FadiIn />
-          </AnimationWrapper>
-          <AnimationWrapper nameLink={"fade out"} href="/fade-out">
-            <FadeOut />
-          </AnimationWrapper>
-          <AnimationWrapper nameLink={"fade in up"} href="/fade-in-up">
-            <FadeInUp />
-          </AnimationWrapper>
-          <AnimationWrapper nameLink={"fade in down"} href="/fade-in-down">
-            <FadeInDown />
-          </AnimationWrapper>
-          <AnimationWrapper nameLink={"fade in left"} href="/fade-in-left">
-            <FadeInLeft />
-          </AnimationWrapper>
-          <AnimationWrapper nameLink={"fade in right"} href="/fade-in-right">
-            <FadeInRigh />
-          </AnimationWrapper>
-          <AnimationWrapper nameLink={"fade out up"} href="/fade-out-up">
-            <FadeOutUp />
-          </AnimationWrapper>
-          <AnimationWrapper nameLink={"fade out down"} href="/fade-out-down">
-            <FadeOutDown />
-          </AnimationWrapper>
-          <AnimationWrapper nameLink={"fade out left"} href="/fade-out-left">
-            <FadeOutLeft />
-          </AnimationWrapper>
-          <AnimationWrapper nameLink={"fade out right"} href="/fade-out-right">
-            <FadeOutRight />
-          </AnimationWrapper>
-          <AnimationWrapper nameLink={"side in out"} href="/side-in-out">
-            <SideInOut />
-          </AnimationWrapper>
-          <AnimationWrapper nameLink={"side in buttom"} href="/side-in-buttom">
-            <SideInBottom />
-          </AnimationWrapper>
-          <AnimationWrapper nameLink={"Pulse fade in"} href="/pulse-fade-in">
-            <PulseFadeIn />
-          </AnimationWrapper>
-          <AnimationWrapper nameLink={"Swing Drop-In"} href="/swing-drop-in">
-            <SwingDropIn />
-          </AnimationWrapper>
-          <AnimationWrapper
-            nameLink={"Slide up with fade"}
-            href="/slide-up-with-fade"
-          >
-            <SlideUpwithFade />
-          </AnimationWrapper>
-          <AnimationWrapper nameLink={"Squeeze"} href="/squeeze">
-            <Squeeze />
-          </AnimationWrapper>
-          <AnimationWrapper
-            nameLink={"Vertical Bounce"}
-            href="/vertical-bounce"
-          >
-            <VerticalBounce />
-          </AnimationWrapper>
-          <AnimationWrapper nameLink={"Rotational Wave"} href="/rotation-wave">
-            <RotationalWave />
-          </AnimationWrapper>
-          <AnimationWrapper
-            nameLink={"Horizontal Vibration"}
-            href="/horizontal-vibration"
-          >
-            <HorizontalVibration />
-          </AnimationWrapper>
-          <AnimationWrapper
-            nameLink={"Blurred Fade-In"}
-            href="/blurred-fade-in"
-          >
-            <BlurredFadeIn />
-          </AnimationWrapper>
-        </div>
+        <motion.div className={styles.gallery__box}>
+          {animationComponents.map((animation, index) => (
+            <motion.div key={index} variants={XAnimations} custom={index}>
+              <AnimationWrapper nameLink={animation.name} href={animation.href}>
+                {animation.component}
+              </AnimationWrapper>
+            </motion.div>
+          ))}
+        </motion.div>
       </Container>
-    </section>
+    </motion.section>
   );
 }
