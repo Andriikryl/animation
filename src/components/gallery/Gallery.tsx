@@ -25,6 +25,7 @@ import RotationalWave from "../RotationalWave/RotationalWave";
 import HorizontalVibration from "../HorizontalVibration/HorizontalVibration";
 import BlurredFadeIn from "../BlurredFade-In/BlurredFadeIn";
 import RubberBand from "../RubberBand/RubberBand";
+import Tada from "../Tada/Tada";
 
 const animationComponents = [
   { name: "fade in", component: <FadiIn />, href: "/fade-in" },
@@ -79,6 +80,11 @@ const animationComponents = [
     name: "Rubber Band",
     component: <RubberBand />,
     href: "/rubber-band",
+  },
+  {
+    name: "Tada",
+    component: <Tada />,
+    href: "/tada",
   },
 ];
 
