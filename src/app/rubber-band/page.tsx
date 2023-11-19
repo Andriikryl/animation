@@ -8,7 +8,7 @@ export default function RubberBandP() {
   return (
     <section>
       <Container>
-        <PageWrapper title="Side in out">
+        <PageWrapper title="Rubber band">
           <RubberBand />
         </PageWrapper>
         <Code
