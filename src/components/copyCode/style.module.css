@@ -3,6 +3,8 @@
     background-color: transparent;
     border: none;
     color: inherit;
+    position: relative;
+    z-index: 200;
 }
 
 .icon{

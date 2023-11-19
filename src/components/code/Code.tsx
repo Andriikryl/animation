@@ -7,8 +7,10 @@ type CodeProps = {
 const Code = ({ code }: CodeProps) => {
   return (
     <div className={styles.code__box}>
-      <code>{code}</code>
+      <code className={styles.code}>{code}</code>
       <CopyCode code={code} />
+      <span className={styles.artButtonAngleLeft} />
+      <span className={styles.artButtonAngleRight} />
     </div>
   );
 };
